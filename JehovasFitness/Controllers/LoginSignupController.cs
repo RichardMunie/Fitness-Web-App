@@ -12,5 +12,16 @@ namespace JehovasFitness.Controllers
         {
             return View();
         }
+
+        public IActionResult Register()
+        {
+
+        }
+
+        [HttpPost]
+        public IActionResult Register()
+        {
+
+        }
     }
 }
