@@ -1,7 +1,27 @@
-﻿@*
+﻿
+@model JehovasFitness.ViewModels.LoginViewModel
+    @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-<h1>Login Page</h1>
-<p>Under Construction</p>
+<h1>Welcome to Jehova's Fitness.</h1>
+
+
+<div class="form-group">
+    <label asp-for="UserName"></label>
+    <input class="form-control"
+           asp-for="UserName" />
+    <span asp-validation-for="UserName"></span>
+</div>
+
+<div class="form-group">
+    <label asp-for="Password"></label>
+    <input class="form-control" asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+</div>
+
+<input type="submit" value="Login" />
+<p>or <a asp-controller="LoginSignup" asp-action="Signup">Create an Account</a></p>
+<p>or Login with <a asp-controller="LoginSignup" asp-action="FacebookLogin">Facebook</a> or <a asp-controller="LoginSignup" asp-action="GoogleLogin">Google</a></p>
+
